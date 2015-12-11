@@ -1,0 +1,22 @@
+{
+  "name": "simple hover menu",
+  "version": "3.2",
+  "title": "simple hover menu",
+  "author": {
+    "name": "nikenou"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nikenou/Jquery-hoverMenu"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "description": "This is a simple hover menu plugins.",
+  "keywords": [
+    "hover menu",
+    "effect"
+  ]
+}

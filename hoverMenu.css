@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/** 个性化定义 **/
+body { font-family: Arial, Helvetica, sans-serif; }
+/* @end */
+
+.area { width: 960px; margin: 0 auto; text-align: left; }
+
+
+/** 基本容器定义 **/
+.area_namespace,.area_summary,.area_btn,.area_form,.area_icon,.area_layout,.area_textList,.area_dlList,.area_imgText,.area_imgList,.area_pageList,.area_commentList,.area_tabArea,.area_countdown,.area_addFavorite,.area_hoverMenu,.area_bubble,.area_sliderArea,.area_floatMenu,.area_fixBox,.area_loadImg,.area_popWindow,.area_stored,area_form { padding: 10px; border: 1px solid #ccc; }
+.area .area_titlebar h2 { font-size: 30px; margin-bottom: 10px; }
+.mod_titlebar { line-height: 25px; }
+.content p { margin: 2px 0; line-height: 20px; }
+.content_title { line-height: 25px; color: #105095; font-size: 14px; font-weight: 700; }
+code { display: inline-block; background: #f7f7f7; padding: 5px; border: 1px dashed #ddd; }
+/* @end */
+
+
+/**
+  * @name : slider
+  * @author	: ouli
+  * @description : 轮换图片幻灯片模块
+  */
+.slider { position: relative; overflow: hidden; }
+.slider ul { width: 100%; }
+.slider ul li { width: 100%; overflow: hidden }
+.slider .slider_bar { width: 100%; background: #000; overflow: hidden; }
+.slider li h3 { color: #FFF; overflow: hidden; }
+.slider .slider_navNum { overflow: hidden; }
+.slider .slider_navNum span { display: inline; float: left; overflow: hidden; text-align: center; }
+/* @end */
+
+/** 选择城市 **/
+.city_sel { position: relative; }
+.city_sel .change, .city_sel .change a { line-height: 12px; color: #3878b5; text-decoration:none; }
+.city_sel .change a { padding-right: 15px; background: url(../img/index_skin.gif) -898px -168px no-repeat; }
+.city_sel .cityMenuArea { position: absolute; top: 15px; left: 0; background: #fff; width: 205px; padding: 10px 0 5px 0; border: 1px solid #3878b5; display:none; z-index: 1000; }
+.city_sel.hover .cityMenuArea { display: block; }
+.city_sel .cityMenuArea p { height: 18px; margin:0 10px; border-bottom:1px dashed #666; color:#333; }
+.city_sel .cityMenuArea .cityMenu { margin:10px 10px 0 10px; }
+.city_sel .cityMenuArea .cityMenu li { display: inline; float: left; margin-right: 10px; height: 20px; }
+.city_sel .cityMenuArea .cityMenu li a { display: block; color: #3878B5; }
+/* @end */

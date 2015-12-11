@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Oli前端CSS</title>
+<link href="basic.css" rel="stylesheet" type="text/css" />
+<link href="../hoverMenu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="script/jquery.min.js"></script>
+<script type="text/javascript" src="../hoverMenu.pack.js"></script>
+<script type="text/javascript">
+//页面加载所需函数
+$(document).ready(function(){
+	/* start: 调用hover菜单插件 */
+	$("#hoverMenu01").hoverDelay({
+		hoverEvent : function(){
+			$("#hoverMenu01 .cityMenuArea").css("display","block");	
+		},
+		outEvent : function(){
+			$("#hoverMenu01 .cityMenuArea").css("display","none");
+		}
+	});
+	/* end */	
+})
+</script>
+</head>
+
+<body>
+<!-- start: 浮动菜单 -->
+<div class="area_hoverMenu area">
+	<div class="titlebar area_titlebar">
+		<h2>浮动菜单</h2>
+	</div>
+	<div class="content">
+		<code>
+			/* start: 调用hover菜单插件 */<br />
+			$("#hoverMenu01").hoverDelay({<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;hoverEvent: function(){<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#hoverMenu01 .cityMenuArea").css("display","block");<br />	
+			&nbsp;&nbsp;&nbsp;&nbsp;},<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;outEvent: function(){<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#hoverMenu01 .cityMenuArea").css("display","none");<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+			});<br />
+			/* end */
+		</code>
+		<span class="blank10"></span>
+		<div class="clearfix" tyle="width: 600px; background-color: #f7f7f7; padding: 10px; ">
+			<div class="city_sel" id="hoverMenu01">
+				<span class="change">[ <a id="change" href="javascript:;">更换城市</a> ]</span>
+				<div class="cityMenuArea">
+					<p>以下城市均已开通：</p>
+					<ul class="cityMenu cls">
+						<li><a href="#">成都站</a></li>
+						<li><a href="#">广州站</a></li>
+					</ul>
+				</div>    
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end: 浮动菜单 -->
+</body>
+</html>
